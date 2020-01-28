@@ -14,63 +14,89 @@
 '----------------------------------------------
 Public Class frmMainScreen
     '------------------------------------------------------------
-    '-                    Subprogram Name:                      -
+    '-              Subprogram Name:chkGlasses_CheckedChanged   -
     '------------------------------------------------------------
     '-                    Written By: Nathan Gaffney            -
+    '-                    Written On: 27 Jan 2020               -
     '------------------------------------------------------------
-    '- Subprogram Purpose:                                      -
+    '- Subprogram Purpose: This subprogram is called            -
+    '- when the Glasses checkbox is either checked or unchecked -
+    '- this subprogram will then flip the visibility            -
+    '- And the enaled state.                                    -
     '------------------------------------------------------------
     '- Parameter Dictionary (in parameter order)                -
+    '- sender  - the object that called this subprogram         -
+    '- e       - the event arguments sent to this subprogram    -
     '------------------------------------------------------------
     '- Local Variable Dictionary (alphabetically)               -
     '- (None)                                                   -
     '------------------------------------------------------------
     Private Sub chkGlasses_CheckedChanged(sender As Object, e As EventArgs) Handles chkGlasses.CheckedChanged
-
+        grpGlassesOptions.Enabled = Not grpGlassesOptions.Enabled
+        grpGlassesOptions.Visible = Not grpGlassesOptions.Visible
     End Sub
     '------------------------------------------------------------
-    '-                    Subprogram Name:                      -
+    '-              Subprogram Name:chkContacts_CheckedChanged  -
     '------------------------------------------------------------
     '-                    Written By: Nathan Gaffney            -
+    '-                    Written On: 27 Jan 2020               -
     '------------------------------------------------------------
-    '- Subprogram Purpose:                                      -
+    '- Subprogram Purpose: This subprogram is called            -
+    '- when the Glasses checkbox is either checked or unchecked -
+    '- this subprogram will then flip the visibility            -
+    '- And the enaled state.                                    -
     '------------------------------------------------------------
     '- Parameter Dictionary (in parameter order)                -
+    '- sender  - the object that called this subprogram         -
+    '- e       - the event arguments sent to this subprogram    -
     '------------------------------------------------------------
     '- Local Variable Dictionary (alphabetically)               -
     '- (None)                                                   -
     '------------------------------------------------------------
     Private Sub chkContacts_CheckedChanged(sender As Object, e As EventArgs) Handles chkContacts.CheckedChanged
-
+        grpContactsOptions.Enabled = Not grpContactsOptions.Enabled
+        grpContactsOptions.Visible = Not grpContactsOptions.Visible
     End Sub
     '------------------------------------------------------------
-    '-                    Subprogram Name:                      -
+    '-          Subprogram Name:chkColoredLens_CheckedChanged   -  
     '------------------------------------------------------------
     '-                    Written By: Nathan Gaffney            -
+    '-                    Written On: 27 Jan 2020               -
     '------------------------------------------------------------
-    '- Subprogram Purpose:                                      -
+    '- Subprogram Purpose: This subprogram will flip the enabled-
+    '- status of lstColoredLensColors, restricting this to only -
+    '- being enabled when chkColoredLens is true                -
     '------------------------------------------------------------
     '- Parameter Dictionary (in parameter order)                -
+    '- sender  - the object that called this subprogram         -
+    '- e       - the event arguments sent to this subprogram    -
     '------------------------------------------------------------
     '- Local Variable Dictionary (alphabetically)               -
     '- (None)                                                   -
     '------------------------------------------------------------
     Private Sub chkColoredLens_CheckedChanged(sender As Object, e As EventArgs) Handles chkColoredLens.CheckedChanged
-
+        lstColoredLensColors.Enabled = Not lstColoredLensColors.Enabled
     End Sub
     '------------------------------------------------------------
-    '-                    Subprogram Name:                      -
+    '-          Subprogram Name:btnProceedToReceiptForm_Click   -
     '------------------------------------------------------------
     '-                    Written By: Nathan Gaffney            -
+    '-                    Written On: 27 Jan 2020               -
     '------------------------------------------------------------
-    '- Subprogram Purpose:                                      -
+    '- Subprogram Purpose: This subprogram will hide            -
+    '- frmMainScreen, show frmReceiptScreen, then populate the  -
+    '- receipt.                                                 -
     '------------------------------------------------------------
     '- Parameter Dictionary (in parameter order)                -
+    '- sender  - the object that called this subprogram         -
+    '- e       - the event arguments sent to this subprogram    -
     '------------------------------------------------------------
     '- Local Variable Dictionary (alphabetically)               -
     '- (None)                                                   -
     '------------------------------------------------------------
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-
+    Private Sub btnProceedToReceiptForm_Click(sender As Object, e As EventArgs) Handles btnProceedToReceiptForm.Click
+        Me.Hide()
+        frmReceiptScreen.txtReceiptTextArea.Text = "Test"
+        frmReceiptScreen.Show()
     End Sub
 End Class

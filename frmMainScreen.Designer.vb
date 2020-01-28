@@ -38,7 +38,7 @@ Partial Class frmMainScreen
         Me.grpLensFrameType = New System.Windows.Forms.GroupBox()
         Me.rdoGlassesOptionsGlassLens = New System.Windows.Forms.RadioButton()
         Me.rdoGlassesOptionsPlasticLens = New System.Windows.Forms.RadioButton()
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.grpContactsOptions = New System.Windows.Forms.GroupBox()
         Me.lstColoredLensColors = New System.Windows.Forms.ListBox()
         Me.chkColoredLens = New System.Windows.Forms.CheckBox()
         Me.chkCleaningSupplies = New System.Windows.Forms.CheckBox()
@@ -47,11 +47,11 @@ Partial Class frmMainScreen
         Me.rboContactOptionsGasPermeable = New System.Windows.Forms.RadioButton()
         Me.rdoContactOptionsExtendedWear = New System.Windows.Forms.RadioButton()
         Me.rdoContactOptionsDailyWear = New System.Windows.Forms.RadioButton()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.btnProceedToReceiptForm = New System.Windows.Forms.Button()
         Me.grpServices.SuspendLayout()
         Me.grpGlassesOptions.SuspendLayout()
         Me.grpLensFrameType.SuspendLayout()
-        Me.GroupBox1.SuspendLayout()
+        Me.grpContactsOptions.SuspendLayout()
         Me.grpContactTypes.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -223,21 +223,21 @@ Partial Class frmMainScreen
         Me.rdoGlassesOptionsPlasticLens.Text = "Plastic Lens/Frame"
         Me.rdoGlassesOptionsPlasticLens.UseVisualStyleBackColor = True
         '
-        'GroupBox1
+        'grpContactsOptions
         '
-        Me.GroupBox1.Controls.Add(Me.lstColoredLensColors)
-        Me.GroupBox1.Controls.Add(Me.chkColoredLens)
-        Me.GroupBox1.Controls.Add(Me.chkCleaningSupplies)
-        Me.GroupBox1.Controls.Add(Me.chkReplacementInsurance)
-        Me.GroupBox1.Controls.Add(Me.grpContactTypes)
-        Me.GroupBox1.Enabled = False
-        Me.GroupBox1.Location = New System.Drawing.Point(13, 319)
-        Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(775, 261)
-        Me.GroupBox1.TabIndex = 4
-        Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "Contacts Options:"
-        Me.GroupBox1.Visible = False
+        Me.grpContactsOptions.Controls.Add(Me.lstColoredLensColors)
+        Me.grpContactsOptions.Controls.Add(Me.chkColoredLens)
+        Me.grpContactsOptions.Controls.Add(Me.chkCleaningSupplies)
+        Me.grpContactsOptions.Controls.Add(Me.chkReplacementInsurance)
+        Me.grpContactsOptions.Controls.Add(Me.grpContactTypes)
+        Me.grpContactsOptions.Enabled = False
+        Me.grpContactsOptions.Location = New System.Drawing.Point(13, 319)
+        Me.grpContactsOptions.Name = "grpContactsOptions"
+        Me.grpContactsOptions.Size = New System.Drawing.Size(775, 261)
+        Me.grpContactsOptions.TabIndex = 4
+        Me.grpContactsOptions.TabStop = False
+        Me.grpContactsOptions.Text = "Contacts Options:"
+        Me.grpContactsOptions.Visible = False
         '
         'lstColoredLensColors
         '
@@ -323,22 +323,22 @@ Partial Class frmMainScreen
         Me.rdoContactOptionsDailyWear.Text = "Daily Wear"
         Me.rdoContactOptionsDailyWear.UseVisualStyleBackColor = True
         '
-        'Button1
+        'btnProceedToReceiptForm
         '
-        Me.Button1.Location = New System.Drawing.Point(13, 587)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(775, 66)
-        Me.Button1.TabIndex = 5
-        Me.Button1.Text = "Button1"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnProceedToReceiptForm.Location = New System.Drawing.Point(13, 587)
+        Me.btnProceedToReceiptForm.Name = "btnProceedToReceiptForm"
+        Me.btnProceedToReceiptForm.Size = New System.Drawing.Size(775, 66)
+        Me.btnProceedToReceiptForm.TabIndex = 5
+        Me.btnProceedToReceiptForm.Text = "Proceed to Receipt Screen"
+        Me.btnProceedToReceiptForm.UseVisualStyleBackColor = True
         '
         'frmMainScreen
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 691)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.GroupBox1)
+        Me.Controls.Add(Me.btnProceedToReceiptForm)
+        Me.Controls.Add(Me.grpContactsOptions)
         Me.Controls.Add(Me.grpGlassesOptions)
         Me.Controls.Add(Me.grpServices)
         Me.Controls.Add(Me.txtClientName)
@@ -351,8 +351,8 @@ Partial Class frmMainScreen
         Me.grpGlassesOptions.PerformLayout()
         Me.grpLensFrameType.ResumeLayout(False)
         Me.grpLensFrameType.PerformLayout()
-        Me.GroupBox1.ResumeLayout(False)
-        Me.GroupBox1.PerformLayout()
+        Me.grpContactsOptions.ResumeLayout(False)
+        Me.grpContactsOptions.PerformLayout()
         Me.grpContactTypes.ResumeLayout(False)
         Me.grpContactTypes.PerformLayout()
         Me.ResumeLayout(False)
@@ -376,12 +376,12 @@ Partial Class frmMainScreen
     Friend WithEvents grpLensFrameType As GroupBox
     Friend WithEvents rdoGlassesOptionsGlassLens As RadioButton
     Friend WithEvents rdoGlassesOptionsPlasticLens As RadioButton
-    Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents grpContactsOptions As GroupBox
     Friend WithEvents grpContactTypes As GroupBox
     Friend WithEvents rboContactOptionsGasPermeable As RadioButton
     Friend WithEvents rdoContactOptionsExtendedWear As RadioButton
     Friend WithEvents rdoContactOptionsDailyWear As RadioButton
-    Friend WithEvents Button1 As Button
+    Friend WithEvents btnProceedToReceiptForm As Button
     Friend WithEvents lstColoredLensColors As ListBox
     Friend WithEvents chkColoredLens As CheckBox
     Friend WithEvents chkCleaningSupplies As CheckBox

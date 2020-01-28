@@ -21,7 +21,9 @@ Public Class frmReceiptScreen
     '- (None)                                                   -
     '------------------------------------------------------------
     Private Sub btnBackToBilling_Click(sender As Object, e As EventArgs) Handles btnBackToBilling.Click
-
+        Me.Hide()
+        txtReceiptTextArea.Text = ""
+        frmMainScreen.Show()
     End Sub
     '------------------------------------------------------------
     '-         Subprogram Name: btnProcessOrder_Click           -

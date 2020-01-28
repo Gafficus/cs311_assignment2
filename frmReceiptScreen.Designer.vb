@@ -22,19 +22,20 @@ Partial Class frmReceiptScreen
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.txtReceiptTextArea = New System.Windows.Forms.TextBox()
         Me.btnBackToBilling = New System.Windows.Forms.Button()
         Me.btnProcessOrder = New System.Windows.Forms.Button()
         Me.btnExitSystem = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
-        'TextBox1
+        'txtReceiptTextArea
         '
-        Me.TextBox1.Location = New System.Drawing.Point(12, 12)
-        Me.TextBox1.Multiline = True
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(372, 438)
-        Me.TextBox1.TabIndex = 0
+        Me.txtReceiptTextArea.Location = New System.Drawing.Point(12, 12)
+        Me.txtReceiptTextArea.Multiline = True
+        Me.txtReceiptTextArea.Name = "txtReceiptTextArea"
+        Me.txtReceiptTextArea.ReadOnly = True
+        Me.txtReceiptTextArea.Size = New System.Drawing.Size(372, 438)
+        Me.txtReceiptTextArea.TabIndex = 3
         '
         'btnBackToBilling
         '
@@ -71,7 +72,7 @@ Partial Class frmReceiptScreen
         Me.Controls.Add(Me.btnExitSystem)
         Me.Controls.Add(Me.btnProcessOrder)
         Me.Controls.Add(Me.btnBackToBilling)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.txtReceiptTextArea)
         Me.Name = "frmReceiptScreen"
         Me.Text = "Obi_Wan Optometry -- Receipt Screen"
         Me.ResumeLayout(False)
@@ -79,7 +80,7 @@ Partial Class frmReceiptScreen
 
     End Sub
 
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents txtReceiptTextArea As TextBox
     Friend WithEvents btnBackToBilling As Button
     Friend WithEvents btnProcessOrder As Button
     Friend WithEvents btnExitSystem As Button
