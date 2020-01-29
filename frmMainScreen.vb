@@ -32,8 +32,9 @@ Public Class frmMainScreen
     '- e       - the event arguments sent to this subprogram    -
     '------------------------------------------------------------
     '- Local Variable Dictionary (alphabetically)               -
-    '- (None)                                                   -
+    '- blnPreventsClose - flag that will prevent closing if true-                                                   -
     '------------------------------------------------------------
+    Public blnPreventsClose As Boolean = True
     Private Sub chkGlasses_CheckedChanged(sender As Object, e As EventArgs) Handles chkGlasses.CheckedChanged
         grpGlassesOptions.Enabled = Not grpGlassesOptions.Enabled
         grpGlassesOptions.Visible = Not grpGlassesOptions.Visible
@@ -99,13 +100,32 @@ Public Class frmMainScreen
     '------------------------------------------------------------
     Private Sub btnProceedToReceiptForm_Click(sender As Object, e As EventArgs) Handles btnProceedToReceiptForm.Click
         Me.Hide()
-        frmReceiptScreen.txtReceiptTextArea.Text = "Test"
+        'frmReceiptScreen.txtReceiptTextArea.Text = "Test"
+        Dim objReceipt As New udtReceipt
         frmReceiptScreen.Show()
     End Sub
-
+    '------------------------------------------------------------
+    '-          Subprogram Name:frmMainScreen_Closing           -
+    '------------------------------------------------------------
+    '-                    Written By: Nathan Gaffney            -
+    '-                    Written On: 28 Jan 2020               -
+    '------------------------------------------------------------
+    '- Subprogram Purpose: This subprogram will prevent the     -
+    '- program from exiting unless the blnPreventsClose is set  -
+    '- to FALSE. This is set to false in the frmReceiptScreen   -
+    '- closing method.                                          -
+    '------------------------------------------------------------
+    '- Parameter Dictionary (in parameter order)                -
+    '- sender  - the object that called this subprogram         -
+    '- e       - the event arguments sent to this subprogram    -
+    '------------------------------------------------------------
+    '- Local Variable Dictionary (alphabetically)               -
+    '- STREEXITMESSAGE - A string to hold the exit message      -
+    '------------------------------------------------------------
     Private Sub frmMainScreen_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
-        If sender = Not frmReceiptScreen Then
-            MessageBox.Show("Glass Shark. Fat kid no go.")
+        Dim STREXITMESSAGE As String = "Program can only be exited from the receipt screen."
+        If blnPreventsClose Then
+            MessageBox.Show(STREXITMESSAGE)
             e.Cancel = True
         End If
     End Sub

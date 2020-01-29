@@ -10,3 +10,15 @@ C:\Users\gaffn\source\repos\assignment2\obj\Debug\assignment2.xml
 C:\Users\gaffn\source\repos\assignment2\obj\Debug\assignment2.pdb
 C:\Users\gaffn\source\repos\assignment2\obj\Debug\assignment2.frmMainScreen.resources
 C:\Users\gaffn\source\repos\assignment2\obj\Debug\assignment2.frmReceiptScreen.resources
+C:\Users\gaffn\source\repos\cs311_assignment2\bin\Debug\assignment2.exe.config
+C:\Users\gaffn\source\repos\cs311_assignment2\bin\Debug\assignment2.exe
+C:\Users\gaffn\source\repos\cs311_assignment2\bin\Debug\assignment2.pdb
+C:\Users\gaffn\source\repos\cs311_assignment2\bin\Debug\assignment2.xml
+C:\Users\gaffn\source\repos\cs311_assignment2\obj\Debug\assignment2.vbprojAssemblyReference.cache
+C:\Users\gaffn\source\repos\cs311_assignment2\obj\Debug\assignment2.frmMainScreen.resources
+C:\Users\gaffn\source\repos\cs311_assignment2\obj\Debug\assignment2.frmReceiptScreen.resources
+C:\Users\gaffn\source\repos\cs311_assignment2\obj\Debug\assignment2.Resources.resources
+C:\Users\gaffn\source\repos\cs311_assignment2\obj\Debug\assignment2.vbproj.GenerateResource.cache
+C:\Users\gaffn\source\repos\cs311_assignment2\obj\Debug\assignment2.exe
+C:\Users\gaffn\source\repos\cs311_assignment2\obj\Debug\assignment2.xml
+C:\Users\gaffn\source\repos\cs311_assignment2\obj\Debug\assignment2.pdb

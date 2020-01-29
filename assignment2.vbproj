@@ -101,6 +101,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="udtReceipt.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="frmMainScreen.resx">
