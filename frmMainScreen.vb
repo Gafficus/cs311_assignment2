@@ -80,6 +80,7 @@ Public Class frmMainScreen
     '------------------------------------------------------------
     Private Sub chkColoredLens_CheckedChanged(sender As Object, e As EventArgs) Handles chkColoredLens.CheckedChanged
         lstColoredLensColors.Enabled = Not lstColoredLensColors.Enabled
+        lstColoredLensColors.SelectedIndex = 1
     End Sub
     '------------------------------------------------------------
     '-          Subprogram Name:btnProceedToReceiptForm_Click   -

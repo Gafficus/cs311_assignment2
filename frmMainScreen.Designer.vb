@@ -208,13 +208,13 @@ Partial Class frmMainScreen
         Me.rdoGlassesOptionsGlassLens.Name = "rdoGlassesOptionsGlassLens"
         Me.rdoGlassesOptionsGlassLens.Size = New System.Drawing.Size(111, 17)
         Me.rdoGlassesOptionsGlassLens.TabIndex = 1
-        Me.rdoGlassesOptionsGlassLens.TabStop = True
         Me.rdoGlassesOptionsGlassLens.Text = "Glass Lens/Frame"
         Me.rdoGlassesOptionsGlassLens.UseVisualStyleBackColor = True
         '
         'rdoGlassesOptionsPlasticLens
         '
         Me.rdoGlassesOptionsPlasticLens.AutoSize = True
+        Me.rdoGlassesOptionsPlasticLens.Checked = True
         Me.rdoGlassesOptionsPlasticLens.Location = New System.Drawing.Point(147, 14)
         Me.rdoGlassesOptionsPlasticLens.Name = "rdoGlassesOptionsPlasticLens"
         Me.rdoGlassesOptionsPlasticLens.Size = New System.Drawing.Size(116, 17)
@@ -297,7 +297,6 @@ Partial Class frmMainScreen
         Me.rboContactOptionsGasPermeable.Name = "rboContactOptionsGasPermeable"
         Me.rboContactOptionsGasPermeable.Size = New System.Drawing.Size(97, 17)
         Me.rboContactOptionsGasPermeable.TabIndex = 2
-        Me.rboContactOptionsGasPermeable.TabStop = True
         Me.rboContactOptionsGasPermeable.Text = "Gas Permeable"
         Me.rboContactOptionsGasPermeable.UseVisualStyleBackColor = True
         '
@@ -308,13 +307,13 @@ Partial Class frmMainScreen
         Me.rdoContactOptionsExtendedWear.Name = "rdoContactOptionsExtendedWear"
         Me.rdoContactOptionsExtendedWear.Size = New System.Drawing.Size(99, 17)
         Me.rdoContactOptionsExtendedWear.TabIndex = 1
-        Me.rdoContactOptionsExtendedWear.TabStop = True
         Me.rdoContactOptionsExtendedWear.Text = "Extended Wear"
         Me.rdoContactOptionsExtendedWear.UseVisualStyleBackColor = True
         '
         'rdoContactOptionsDailyWear
         '
         Me.rdoContactOptionsDailyWear.AutoSize = True
+        Me.rdoContactOptionsDailyWear.Checked = True
         Me.rdoContactOptionsDailyWear.Location = New System.Drawing.Point(7, 9)
         Me.rdoContactOptionsDailyWear.Name = "rdoContactOptionsDailyWear"
         Me.rdoContactOptionsDailyWear.Size = New System.Drawing.Size(77, 17)

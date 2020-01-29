@@ -34,14 +34,14 @@ Partial Class frmReceiptScreen
         Me.txtReceiptTextArea.Multiline = True
         Me.txtReceiptTextArea.Name = "txtReceiptTextArea"
         Me.txtReceiptTextArea.ReadOnly = True
-        Me.txtReceiptTextArea.Size = New System.Drawing.Size(372, 438)
+        Me.txtReceiptTextArea.Size = New System.Drawing.Size(431, 438)
         Me.txtReceiptTextArea.TabIndex = 3
         '
         'btnBackToBilling
         '
         Me.btnBackToBilling.Location = New System.Drawing.Point(12, 456)
         Me.btnBackToBilling.Name = "btnBackToBilling"
-        Me.btnBackToBilling.Size = New System.Drawing.Size(372, 43)
+        Me.btnBackToBilling.Size = New System.Drawing.Size(431, 43)
         Me.btnBackToBilling.TabIndex = 1
         Me.btnBackToBilling.Text = "Go Back To Billing"
         Me.btnBackToBilling.UseVisualStyleBackColor = True
@@ -50,7 +50,7 @@ Partial Class frmReceiptScreen
         '
         Me.btnProcessOrder.Location = New System.Drawing.Point(12, 505)
         Me.btnProcessOrder.Name = "btnProcessOrder"
-        Me.btnProcessOrder.Size = New System.Drawing.Size(372, 43)
+        Me.btnProcessOrder.Size = New System.Drawing.Size(431, 43)
         Me.btnProcessOrder.TabIndex = 1
         Me.btnProcessOrder.Text = "Process Order"
         Me.btnProcessOrder.UseVisualStyleBackColor = True
@@ -59,7 +59,7 @@ Partial Class frmReceiptScreen
         '
         Me.btnExitSystem.Location = New System.Drawing.Point(12, 554)
         Me.btnExitSystem.Name = "btnExitSystem"
-        Me.btnExitSystem.Size = New System.Drawing.Size(372, 43)
+        Me.btnExitSystem.Size = New System.Drawing.Size(431, 43)
         Me.btnExitSystem.TabIndex = 1
         Me.btnExitSystem.Text = "Exit System"
         Me.btnExitSystem.UseVisualStyleBackColor = True
@@ -68,7 +68,7 @@ Partial Class frmReceiptScreen
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(396, 605)
+        Me.ClientSize = New System.Drawing.Size(453, 605)
         Me.Controls.Add(Me.btnExitSystem)
         Me.Controls.Add(Me.btnProcessOrder)
         Me.Controls.Add(Me.btnBackToBilling)
