@@ -11,7 +11,10 @@
 '- This program                               -
 '----------------------------------------------
 '- Global Variable Dictionary (alphabetically)-
+'- bln
 '----------------------------------------------
+Imports System.ComponentModel
+
 Public Class frmMainScreen
     '------------------------------------------------------------
     '-              Subprogram Name:chkGlasses_CheckedChanged   -
@@ -98,5 +101,12 @@ Public Class frmMainScreen
         Me.Hide()
         frmReceiptScreen.txtReceiptTextArea.Text = "Test"
         frmReceiptScreen.Show()
+    End Sub
+
+    Private Sub frmMainScreen_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
+        If sender = Not frmReceiptScreen Then
+            MessageBox.Show("Glass Shark. Fat kid no go.")
+            e.Cancel = True
+        End If
     End Sub
 End Class

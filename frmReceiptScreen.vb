@@ -53,6 +53,7 @@ Public Class frmReceiptScreen
     '- (None)                                                   -
     '------------------------------------------------------------
     Private Sub btnExitSystem_Click(sender As Object, e As EventArgs) Handles btnExitSystem.Click
-
+        frmMainScreen.Close()
+        Me.Close()
     End Sub
 End Class
