@@ -102,6 +102,7 @@ Public Class frmMainScreen
         Me.Hide()
         'frmReceiptScreen.txtReceiptTextArea.Text = "Test"
         Dim objReceipt As New udtReceipt
+        frmReceiptScreen.txtReceiptTextArea.Text = objReceipt.ToString()
         frmReceiptScreen.Show()
     End Sub
     '------------------------------------------------------------
